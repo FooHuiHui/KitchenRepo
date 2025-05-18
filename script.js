@@ -1,8 +1,6 @@
-async function addFood() {
-    var food_name = document.getElementById("food_name").value;
-    const quantity = document.getElementById("quantity").value;
-    const expiry_date = document.getElementById("expiry_date").value;
-    const reminder_days = document.getElementById("reminder_days").value;
-
-document.getElementById("food_name").textContent = food_name
-}
+function displayInput(event) {
+      event.preventDefault(); // Prevents the form from refreshing the page
+      const name = document.getElementById('nameInput').value; // Gets the input value
+      const outputDiv = document.getElementById('output');
+      outputDiv.textContent = `Hello, ${name}!`; // Displays the input
+    }
