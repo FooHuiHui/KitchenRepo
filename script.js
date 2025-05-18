@@ -4,5 +4,5 @@ async function addFood() {
     const expiry_date = document.getElementById("expiry_date").value;
     const reminder_days = document.getElementById("reminder_days").value;
 
-
+document.getElementById("food_name").textContent = user_input1
 }
